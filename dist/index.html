@@ -4,7 +4,348 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Change Name</title>
-  <script defer src="bundle6631d61ff6982a158b19.js"></script></head>
-  <body></body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+      integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>Rafael Leal</title>
+  <script defer src="bundle60252a05366f0a1ae660.js"></script></head>
+  <body>
+    <div class="wrapper-loader">
+      <div class="pageLoader">
+        <h1>RL.</h1>
+        <div class="counter">
+          <h2>0</h2>
+          <span>%</span>
+        </div>
+      </div>
+    </div>
+    <div id="pageLoaded">
+      <header class="header">
+        <img id="bgNav" alt="" />
+        <nav class="navbar">
+          <div class="navbar__brand">
+            <img id="brandLogo" alt="" />
+            <img id="brandLogoWhite" alt="" />
+          </div>
+          <div class="navbar__list">
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li>
+                <box-icon name="hot"></box-icon>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <div id="toggleDark">
+                  <i class="bx bx-moon"></i>
+                  <i class="bx bx-sun"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <article class="hero">
+          <div class="hero-col-1">
+            <h1 class="hero__title">
+              <span>Rafael Leal</span>
+              <span>developer</span>
+            </h1>
+            <p>
+              I'm a front-end react developer based on Brazil. Passiontate to
+              detalhism e minimal design.
+            </p>
+            <button class="btn">
+              See projects <i class="bx bx-right-arrow-alt btn-icon"></i>
+            </button>
+          </div>
+
+          <div class="hero-col-2">
+            <img id="bgHero" alt="" />
+            <div class="icons-fixed">
+              <ul>
+                <li>
+                  <a href="google.com">
+                    <i class="bx bxl-linkedin"></i>
+                    <div><span> Linkedin </span></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="google.com">
+                    <i class="bx bxl-github"></i>
+                    <div><span> Github </span></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="projects" id="projects">
+          <h2 class="article-title">PROJECTS</h2>
+          <div class="project__box">
+            <div class="project__box-view">
+              <img class="svg-dot" alt="" />
+              <div class="box">
+                <img id="mock-1" class="img-1" alt="" />
+              </div>
+            </div>
+            <div class="wrapper">
+              <h3 class="project__box-title">
+                Flame Play <span>Landing page</span>
+              </h3>
+              <p class="project__box-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores maiores accusamus fugiat explicabo harum quae.
+              </p>
+              <h4>
+                Builded with:
+                <ul>
+                  <li>Vuejs</li>
+                  <li>Sass</li>
+                  <li>Vuex</li>
+                </ul>
+              </h4>
+              <button class="btn">
+                Details <i class="bx bx-right-arrow-alt btn-icon"></i>
+              </button>
+              <div class="project__box-icons">
+                <a href="google.com">
+                  <i class="bx bx-link-external"></i>
+                  <div><span> Live </span></div>
+                </a>
+                <a href="google.com">
+                  <i class="bx bx-code"></i>
+                  <div><span> Code </span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__box">
+            <div class="project__box-view">
+              <img class="svg-dot" alt="" />
+              <div class="box">
+                <img id="mock-3" class="img-1" alt="" />
+              </div>
+            </div>
+            <div class="wrapper">
+              <h3 class="project__box-title">
+                Flame Play <span>Landing page</span>
+              </h3>
+              <p class="project__box-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores maiores accusamus fugiat explicabo harum quae.
+              </p>
+              <h4>
+                Builded with:
+                <ul>
+                  <li>Vuejs</li>
+                  <li>Sass</li>
+                  <li>Vuex</li>
+                </ul>
+              </h4>
+              <button class="btn">
+                Details <i class="bx bx-right-arrow-alt btn-icon"></i>
+              </button>
+              <div class="project__box-icons">
+                <a href="google.com">
+                  <i class="bx bx-link-external"></i>
+                  <div><span> Live </span></div>
+                </a>
+                <a href="google.com">
+                  <i class="bx bx-code"></i>
+                  <div><span> Code </span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__box">
+            <div class="project__box-view">
+              <img class="svg-dot" alt="" />
+              <div class="box">
+                <img id="mock-2" class="img-1" alt="" />
+              </div>
+            </div>
+            <div class="wrapper">
+              <h3 class="project__box-title">
+                Flame Play <span>Landing page</span>
+              </h3>
+              <p class="project__box-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores maiores accusamus fugiat explicabo harum quae.
+              </p>
+              <h4>
+                Builded with:
+                <ul>
+                  <li>Vuejs</li>
+                  <li>Sass</li>
+                  <li>Vuex</li>
+                </ul>
+              </h4>
+              <button class="btn">
+                Details <i class="bx bx-right-arrow-alt btn-icon"></i>
+              </button>
+              <div class="project__box-icons">
+                <a href="google.com">
+                  <i class="bx bx-link-external"></i>
+                  <div><span> Live </span></div>
+                </a>
+                <a href="google.com">
+                  <i class="bx bx-code"></i>
+                  <div><span> Code </span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h5>See more at <a href="github.com">Github</a></h5>
+        </article>
+        <article class="about" id="about">
+          <h2 class="article-title">About me</h2>
+
+          <div class="about-profile">
+            <div class="about-profile__photo">
+              <img class="svg-dot" alt="" />
+              <img id="profile-photo" alt="" />
+            </div>
+            <div class="about-profile__list">
+              <h3>Rafael G. Leal</h3>
+              <ul>
+                <li>Front-end developer</li>
+                <li>Brazil</li>
+                <li>Languages: English, portuguese and french.</li>
+              </ul>
+              <button class="btn">
+                Download CV <i class="bx bx-download btn-icon"></i>
+              </button>
+            </div>
+            <div class="about-profile__icons">
+              <div class="icons-fixed">
+                <ul>
+                  <li>
+                    <a href="google.com">
+                      <i class="bx bxl-linkedin"></i>
+                      <div><span>Linkedin </span></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="google.com">
+                      <i class="bx bxl-github"></i>
+                      <div><span> Github </span></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-description">
+            <p class="about-description__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam, corporis corrupti quis, ducimus repellendus officiis
+              quos maiores dolore laborum aspernatur quae ex deserunt aliquam
+              eum alias est autem! Porro, illum.
+            </p>
+            <div class="about-description__list">
+              <p>Tecnlogioes i've been working with:</p>
+              <ul>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>Css/Sass</li>
+                <li>Vue.js</li>
+                <li>MongoDB</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="logo-slide">
+            <img id="jsLogo" alt="" />
+            <img id="phpLogo" alt="" />
+            <img id="laravelLogo" alt="" />
+            <img id="vueLogo" alt="" />
+          </div>
+        </article>
+        <article class="contact" id="contact">
+          <h2 class="article-title">Contact Me</h2>
+          <p class="contact-subtitle">
+            Wanna work, talk, or sugest, just send me a message!
+          </p>
+          <div class="wrapper">
+            <form id="contact-form">
+              <input type="hidden" name="contact_number" />
+              <input
+                type="text"
+                name="user_name"
+                placeholder="What's your name?"
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="What's your message?"
+              />
+
+              <textarea
+                name="message"
+                placeholder="What's your message?"
+              ></textarea>
+
+              <input type="submit" class="btn" value="Send" />
+            </form>
+
+            <div class="form-info">
+              <ul>
+                <li>
+                  <span>Email:</span>
+                  <p>rafael.gms.leal@gmail.com</p>
+                </li>
+                <li>
+                  <span>Phone:</span>
+                  <p>+55 81 985706923</p>
+                </li>
+                <li>
+                  <span>Linkedin:</span>
+                  <p>Rafaelgleal</p>
+                </li>
+                <li>
+                  <span>Github:</span>
+                  <p>Rafaelgleal</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>Rafael Leal</p>
+        <p>2022 © Edition</p>
+      </footer>
+    </div>
+  </body>
 </html>

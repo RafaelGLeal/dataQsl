@@ -1,0 +1,41 @@
+@keyframes lineLoader {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes squareRotate {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(4px, 2px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(-3px, -6px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    transform: translateX(-50px) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0px) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50px) rotate(0deg);
+    opacity: 0;
+  }
+}

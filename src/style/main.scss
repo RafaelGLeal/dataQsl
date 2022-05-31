@@ -1,3 +1,122 @@
 @import "abstracts/__abstracts-dir";
 @import "base/__base-dir";
 @import "components/__components-dir";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: $bg-light;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  input,
+  li {
+    color: $color-black;
+    margin: 0;
+    padding: 0;
+  }
+  a,
+  p,
+  span,
+  input {
+    font-family: $font-paragraph;
+    text-decoration: none;
+  }
+  .bx-sun {
+    display: none;
+  }
+  i {
+    cursor: pointer;
+    color: $color-black;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-heading;
+  }
+}
+
+body.darkMode {
+  background-image: none;
+  background-color: #323232;
+  #bgHero {
+    filter: invert(100%) opacity(0.1);
+  }
+  #brandLogoWhite {
+    display: block;
+  }
+  #brandLogo {
+    display: none;
+  }
+  #bgNav {
+    filter: invert(0) opacity(0.5);
+  }
+  #toggleDark {
+    .bx-moon {
+      display: none;
+    }
+    .bx-sun {
+      display: inline;
+    }
+  }
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  input,
+  i,
+  li,
+  ::placeholder {
+    color: $color-white;
+  }
+  .article-title:after,
+  .article-title:before {
+    background-color: $color-white;
+  }
+  .hero-col-1 h1::before,
+  .project__box-icons:before {
+    background-color: $color-white !important;
+  }
+  .box::before {
+    background-color: $color-white;
+  }
+  .svg-dot {
+    filter: invert(100%);
+  }
+  input,
+  textarea {
+    border-bottom: 1px solid $color-white;
+  }
+  .logo-slide img {
+    background-color: rgba(255, 255, 255, 0.151);
+  }
+}

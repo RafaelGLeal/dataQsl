@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
 module.exports = {
   mode: "development",
   entry: {
@@ -47,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Change Name",
+      title: "Rafael Leal",
       filename: "index.html",
       template: "src/template.html",
     }),
