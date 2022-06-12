@@ -23,34 +23,9 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init("b5lSr9BjAbz8bQdpY");
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = (Math.random() * 100000) | 0;
-            // these IDs from the previous steps
-            emailjs.sendForm("contact_service", "contact_form", this).then(
-              function () {
-                console.log("SUCCESS!");
-              },
-              function (error) {
-                console.log("FAILED...", error);
-              }
-            );
-          });
-      };
-    </script>
+
     <title>Rafael Leal</title>
-  <script defer src="bundle9ab83380315e9847ac23.js"></script></head>
+  <script defer src="bundle9308df9ccde31acbd391.js"></script></head>
   <body>
     <div class="wrapper-loader">
       <div class="pageLoader">
@@ -92,12 +67,8 @@
           <div class="hero-col-1">
             <h1 class="hero__title">
               <span>Rafael Leal</span>
-              <span>developer</span>
             </h1>
-            <p>
-              I'm a front-end react developer based on Brazil. Passiontate to
-              detalhism e minimal design.
-            </p>
+            <p>I'm a front-end developer based on Brazil.</p>
             <button class="btn">
               See projects <i class="bx bx-right-arrow-alt btn-icon"></i>
             </button>

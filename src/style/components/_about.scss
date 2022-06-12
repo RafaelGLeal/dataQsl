@@ -1,8 +1,8 @@
 .about {
   width: 80%;
-  margin: 30vh auto 0;
+  margin: 20vh auto 0;
   h2 {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
   }
   &-profile {
     display: flex;
@@ -48,15 +48,12 @@
       .icons-fixed {
         position: absolute;
         top: 0;
-        i {
-          box-shadow: $box-shadow;
-        }
       }
     }
   }
   &-description {
     display: flex;
-    margin-top: 8em;
+    margin-top: 5em;
     gap: 5em;
     width: 100%;
     &__paragraph {
